@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="SATRIO MOTOR SARADAN — layanan servis motor panggilan dan ganti oli di Saradan. Hubungi WhatsApp untuk pemesanan.">
+  <title>SATRIO MOTOR SARADAN | Servis Motor Panggilan</title>
+  <style>
+    :root {
+      --dark: #111111;
+      --red: #e53935;
+      --light: #f5f5f5;
+      --muted: #bdbdbd;
+      --green: #25d366;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background: var(--dark);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, 92%); margin: auto; }
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid #292929;
+      background: #0b0b0b;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { font-weight: 900; letter-spacing: 1px; font-size: 1.05rem; }
+    .brand span { color: var(--red); }
+    .nav a {
+      text-decoration: none; font-weight: 700; font-size: .9rem;
+      padding: 9px 14px; border: 1px solid #555; border-radius: 999px;
+    }
+    .hero {
+      min-height: 560px;
+      display: flex; align-items: center;
+      background:
+        radial-gradient(ellipse at 85% 25%, rgba(229,57,53,.25), transparent 38%),
+        linear-gradient(135deg, #171717 0%, #090909 72%);
+      padding: 70px 0;
+    }
+    .hero-content { max-width: 720px; }
+    .tag {
+      display: inline-block; background: rgba(229,57,53,.14);
+      color: #ff7773; border: 1px solid rgba(229,57,53,.5);
+      border-radius: 999px; padding: 6px 13px; font-size: .82rem;
+      font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px; font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.02; letter-spacing: -2px;
+    }
+    h1 span { color: var(--red); }
+    .hero p { color: #d0d0d0; max-width: 580px; font-size: 1.08rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border-radius: 9px; padding: 13px 19px; text-decoration: none;
+      font-weight: 800; transition: transform .15s ease, opacity .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: .92; }
+    .btn-red { background: var(--red); color: white; }
+    .btn-outline { border: 1px solid #666; color: white; }
+    section { padding: 65px 0; }
+    .section-head { text-align: center; max-width: 650px; margin: 0 auto 32px; }
+    .eyebrow { color: var(--red); text-transform: uppercase; font-weight: 900; letter-spacing: 2px; font-size: .8rem; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 8px 0; line-height: 1.15; }
+    .section-head p { color: var(--muted); margin: 10px 0 0; }
+    .services { background: var(--light); color: #171717; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      background: white; border: 1px solid #e7e7e7; border-radius: 16px;
+      padding: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.05);
+    }
+    .icon {
+      display: grid; place-items: center; width: 58px; height: 58px;
+      border-radius: 14px; background: #fff0ef; color: var(--red);
+      font-size: 1.8rem; margin-bottom: 16px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.35rem; }
+    .card p { color: #626262; margin: 0; }
+    .contact { text-align: center; background: #151515; }
+    .contact-panel {
+      max-width: 760px; margin: auto; padding: clamp(24px, 5vw, 44px);
+      border: 1px solid #333; border-radius: 18px;
+      background: linear-gradient(135deg, #202020, #111);
+    }
+    .contact-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 24px 0; }
+    .contact-item {
+      background: #242424; border: 1px solid #383838; border-radius: 10px;
+      padding: 12px 16px; color: #eee;
+    }
+    .contact-item strong { color: white; }
+    .btn-green { background: var(--green); color: #062b13; }
+    footer { padding: 22px 0; text-align: center; color: #aaa; font-size: .85rem; border-top: 1px solid #292929; }
+    .float-wa {
+      position: fixed; right: 18px; bottom: 18px; z-index: 5;
+      background: var(--green); color: #062b13; text-decoration: none;
+      font-weight: 900; padding: 13px 17px; border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+    @media (max-width: 640px) {
+      .hero { min-height: auto; padding: 64px 0; }
+      .cards { grid-template-columns: 1fr; }
+      .nav { align-items: flex-start; }
+      .brand { max-width: 190px; }
+      .nav a { font-size: .8rem; }
+      h1 { letter-spacing: -1px; }
+      .float-wa { right: 12px; bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">SATRIO <span>MOTOR</span> SARADAN</div>
+      <a href="#kontak">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="tag">Servis Motor Panggilan</div>
+          <h1>Motor Bermasalah?<br><span>Hubungi Kami!</span></h1>
+          <p>SATRIO MOTOR SARADAN melayani servis motor panggilan dan ganti oli. Hubungi kami melalui WhatsApp untuk menanyakan layanan dan pemesanan.</p>
+          <div class="actions">
+            <a class="btn btn-red" href="https://wa.me/6282199675907?text=Halo%20Satrio%20Motor%20Saradan%2C%20saya%20ingin%20memesan%20servis%20motor%20panggilan." target="_blank" rel="noopener">☏ Pesan via WhatsApp</a>
+            <a class="btn btn-outline" href="#layanan">Lihat Layanan ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="layanan">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Layanan Kami</div>
+          <h2>Perawatan Motor Anda</h2>
+          <p>Pilih layanan yang Anda butuhkan, lalu hubungi kami untuk informasi lebih lanjut.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🛢️</div>
+            <h3>Ganti Oli</h3>
+            <p>Layanan penggantian oli motor. Hubungi kami untuk menanyakan ketersediaan oli dan pemesanan.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🔧</div>
+            <h3>Servis Motor</h3>
+            <p>Layanan servis motor panggilan. Ceritakan kendala motor Anda melalui WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div class="eyebrow">Pemesanan & Informasi</div>
+          <h2>SATRIO MOTOR SARADAN</h2>
+          <p style="color:#c7c7c7">Butuh ganti oli atau servis motor panggilan? Hubungi kami melalui WhatsApp.</p>
+          <div class="contact-list">
+            <div class="contact-item">WhatsApp: <strong>+62 821-9967-5907</strong></div>
+            <div class="contact-item">Alamat: <strong>Saradan</strong></div>
+          </div>
+          <a class="btn btn-green" href="https://wa.me/6282199675907?text=Halo%20Satrio%20Motor%20Saradan%2C%20saya%20ingin%20bertanya%20tentang%20layanan." target="_blank" rel="noopener">Chat WhatsApp Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> SATRIO MOTOR SARADAN. Semua hak dilindungi.</div>
+  </footer>
+  <a class="float-wa" href="https://wa.me/6282199675907?text=Halo%20Satrio%20Motor%20Saradan" target="_blank" rel="noopener" aria-label="Chat WhatsApp">WhatsApp ↗</a>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
